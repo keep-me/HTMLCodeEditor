@@ -8,12 +8,28 @@
   </head>
   <body>
     <div class="btn">
-      <button>Run</button>
+      <button id="runBtn">Run</button>
     </div>
-    <div class="wrapper">
-      <textarea name="" id="" class="input"></textarea>
-      <iframe src="" frameborder="0" class="output"></iframe>
-      <script src="script.js"></script>
+    <div class="container">
+      <div class="editors">
+        <div class="editor-container">
+          <div class="editor-header">HTML</div>
+          <textarea id="htmlInput" class="editor" placeholder="Enter HTML code here..."></textarea>
+        </div>
+        <div class="editor-container">
+          <div class="editor-header">CSS</div>
+          <textarea id="cssInput" class="editor" placeholder="Enter CSS code here..."></textarea>
+        </div>
+        <div class="editor-container">
+          <div class="editor-header">JavaScript</div>
+          <textarea id="jsInput" class="editor" placeholder="Enter JavaScript code here..."></textarea>
+        </div>
+      </div>
+      <div class="preview-container">
+        <div class="editor-header">Preview</div>
+        <iframe id="preview" srcdoc="" frameborder="0" class="output"></iframe>
+      </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
